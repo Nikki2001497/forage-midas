@@ -15,5 +15,9 @@ public class DatabaseConduit {
     public void save(UserRecord userRecord) {
         userRepository.save(userRecord);
     }
+    // TEMPORARY debugging method
+    public Iterable<UserRecord> listUsers() {
+        return userRepository.findAll();
+    }
 
 }
